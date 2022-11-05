@@ -31,11 +31,11 @@ class urllistapi(viewsets.ModelViewSet):
 
             
         except URLError as e:
-            print("Opps ! Page not found!", e)
+            # print("Opps ! Page not found!", e)
             return HttpResponse("Opps ! Page not found!")
         
         else:
-            print('Yeah !  found ')
+            # print('Yeah !  found ')
             return HttpResponse('Yeah !  found ')
 
 
